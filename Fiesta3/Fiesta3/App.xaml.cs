@@ -13,7 +13,8 @@ namespace Fiesta3
         {
             InitializeComponent();
 
-            MainPage = new Fiesta3.MainPage();
+            //MainPage = new Fiesta3.Menu();
+            MainPage = new NavigationPage(new Menu());
         }
 
         protected override void OnStart()

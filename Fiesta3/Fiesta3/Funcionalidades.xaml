@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fiesta3.Funcionalidades">
+    <ContentPage.Content>
+        <StackLayout x:Name="layout" Padding="30">
+            <Entry x:Name="txtname"></Entry>
+            <Label Text="Welcome Mr.." VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label BindingContext="{x:Reference Name=txtname}" Text="{Binding Path=Text}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Entry x:Name="txtname2"></Entry>
+            <Label BindingContext="{x:Reference Name=txtname2}" 
+                   Text="{Binding Path=Text, StringFormat='Welcome Mr {0}'}" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            <Button x:Name="crearCarnes" Text="Agregar Carne" Clicked="crear_Clicked"></Button>
+            <Button x:Name="CrearVerduras" Text="Agregar Verduras"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

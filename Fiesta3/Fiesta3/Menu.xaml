@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fiesta3.Menu">
+    <ContentPage.Content>
+        <StackLayout Padding="20" HorizontalOptions="Center">
+            <Button x:Name="nuevocarrete" 
+                    Text="Nuevo Carrete" 
+                    TextColor="White" 
+                    BackgroundColor="Black" 
+                    BorderRadius="20" 
+                    BorderWidth="2" 
+                    BorderColor="Black" 
+                    WidthRequest="150" 
+                    Clicked="consultarcarrete_Clicked">
+            </Button>
+            <Button x:Name="consultarcarrete" 
+                    Text="Consultar Carrete"
+                    TextColor="White" 
+                    BackgroundColor="Gray" 
+                    BorderRadius="20" 
+                    BorderWidth="2" 
+                    BorderColor="Gray" 
+                    WidthRequest="150" 
+                    Clicked="consultarcarrete_Clicked">
+            </Button>
+            <Button x:Name="catalogocarnes" 
+                    Text="Catálogo de Carnes" 
+                    TextColor="White" 
+                    BackgroundColor="DarkBlue" 
+                    BorderRadius="20" 
+                    BorderWidth="2" 
+                    BorderColor="DarkBlue" 
+                    WidthRequest="150" 
+                    Clicked="catalogocarnes_Clicked">
+            </Button>
+            <Button x:Name="funcionalidades" 
+                    Text="Funcionalidades"
+                    TextColor="White" 
+                    BackgroundColor="Blue" 
+                    BorderRadius="20" 
+                    BorderWidth="2" 
+                    BorderColor="Blue" 
+                    WidthRequest="150" 
+                    Clicked="funcionalidades_Clicked"></Button>
+            <Button></Button>
+            <Button></Button>
+            <Button></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
